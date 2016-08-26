@@ -5,7 +5,148 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <div>TODO write content</div>
+    <body bgcolor = "#2FE6BF" text="#DF2F2F">
+        <div id="descripcionfactura" align="center">
+            <h2>Factura de Venta</h2>
+            <p>
+                Mi Empresa S.A. <br>    
+                RUC: 1314854918001            
+            </p>            
+        </div>           
+        <br>
+        <div id="factura" align="center">
+        <form id="frmdetallefactura">
+            <label>Número De Factura: </label>
+            <input type="text" id="txtnumfact" value=""/> <br>
+            <label>Nombre de Cliente: </label>
+            <input type="text" id="txtnombre" value=""/> <br>
+            <label>Fecha: </label>        
+            <input type="date" id="txtfecha"/>
+            <br> 
+            <br>
+            <table id="tabladetalle" border="2" width="3" cellspacing="2" cellpadding="1" >
+                <thead>
+                <tr>
+                    <th>Código Producto</th>
+                    <th>Cantidad</th>
+                    <th>Descripción</th>
+                    <th>Precio Unitario</th>
+                    <th>Precio Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="number" id="txtcodigo0" value="0"/>
+                        <td><input type="number" id="txtcantidad0" value="0"/>
+                        <td><input type="text" id="txtdescripcion0"/>
+                        <td><input type="number" id="txtpreciounitario0" value="0"/>
+                        <td><input type="number" id="txttotal0" value="0" disabled=""/>                        
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="number" id="txtcodigo1" value="0"/>
+                        <td><input type="number" id="txtcantidad1" value="0"/>
+                        <td><input type="text" id="txtdescripcion1"/>
+                        <td><input type="number" id="txtpreciounitario1" value="0"/>
+                        <td><input type="number" id="txttotal1" value="0" disabled=""/>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="number" id="txtcodigo2" value="0"/>
+                        <td><input type="number" id="txtcantidad2" value="0"/>
+                        <td><input type="text" id="txtdescripcion2"/>
+                        <td><input type="number" id="txtpreciounitario2" value="0"/>
+                        <td><input type="number" id="txttotal2" value="0" disabled=""/>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="number" id="txtcodigo3" value="0"/>
+                        <td><input type="number" id="txtcantidad3" value="0"/>
+                        <td><input type="text" id="txtdescripcion3"/>
+                        <td><input type="number" id="txtpreciounitario3" value="0"/>
+                        <td><input type="number" id="txttotal3" value="0" disabled=""/>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="number" id="txtcodigo4" value="0"/>
+                        <td><input type="number" id="txtcantidad4" value="0"/>
+                        <td><input type="text" id="txtdescripcion4"/>
+                        <td><input type="number" id="txtpreciounitario4" value="0"/>
+                        <td><input type="number" id="txttotal4" value="0" disabled=""/>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="number" id="txtcodigo5" value="0"/>
+                        <td><input type="number" id="txtcantidad5" value="0"/>
+                        <td><input type="text" id="txtdescripcion5"/>
+                        <td><input type="number" id="txtpreciounitario5" value="0"/>
+                        <td><input type="number" id="txttotal5" value="0" disabled=""/>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="number" id="txtcodigo6" value="0"/>
+                        <td><input type="number" id="txtcantidad6" value="0"/>
+                        <td><input type="text" id="txtdescripcion6"/>
+                        <td><input type="number" id="txtpreciounitario6" value="0"/>
+                        <td><input type="number" id="txttotal6" value="0" disabled=""/>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="number" id="txtcodigo7" value="0"/>
+                        <td><input type="number" id="txtcantidad7" value="0"/>
+                        <td><input type="text" id="txtdescripcion7"/>
+                        <td><input type="number" id="txtpreciounitario7" value="0"/>
+                        <td><input type="number" id="txttotal7" value="0" disabled=""/>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="number" id="txtcodigo8" value="0"/>
+                        <td><input type="number" id="txtcantidad8" value="0"/>
+                        <td><input type="text" id="txtdescripcion8"/>
+                        <td><input type="number" id="txtpreciounitario8" value="0"/>
+                        <td><input type="number" id="txttotal8" value="0" disabled=""/>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="number" id="txtcodigo9" value="0"/>
+                        <td><input type="number" id="txtcantidad9" value="0"/>
+                        <td><input type="text" id="txtdescripcion9"/>
+                        <td><input type="number" id="txtpreciounitario9" value="0"/>
+                        <td><input type="number" id="txttotal9" value="0" disabled=""/>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <table id="tablaresultados" border="2" width="3" cellspacing="2" cellpadding="1">
+                    <tr>
+                        <td><label>Subtotal: </label></td>
+                        <td><input type="number" id="txtsubtotal" value="0" disabled=""/>
+                    </tr>
+                    
+                    <tr>
+                        <td><label>IVA: </label></td>
+                        <td><input type="number" id="txtiva" value="0" disabled=""/>
+                    </tr>
+                    
+                    <tr>
+                        <td><label>Descuento: </label></td>
+                        <td><input type="number" id="txtdescuento" value="0"/>
+                    </tr>
+                    
+                    <tr>
+                        <td><label>Total: </label></td>
+                        <td><input type="number" id="txtpreciototal" value="0" disabled=""/>
+                    </tr>                                                                  
+                </table>
+            <br>
+            <input type="button" id="btnimprimir" value="Imprimir" onclick="window.print();"/>
+            <input type="reset" id="btnlimpiar" value="Nueva Factura"/>
+        </form>
+        </div>  
+        <footer>
+            <center>
+                <small>Melissa Mendoza - 2016</small>
+            </center>
+        </footer>
     </body>
 </html>
